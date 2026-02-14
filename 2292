@@ -1,0 +1,14 @@
+N = int(input())
+
+if N == 1:
+    print(1)
+else:
+    N -= 1
+    i = 0
+    while True:
+        N -= 6*i
+        if N <= 0:
+            print(i+1)
+            break
+        else:
+            i += 1
